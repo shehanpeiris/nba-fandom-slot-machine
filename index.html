@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Liberated Fandom NBA Slot Machine</title>
+  <link href="./style/style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="team-data">
+      <h2 id="team-name"></h2>
+      <image id="team-logo"></image>
+    </div>
+    <button id="spin-it">
+      CLICK TO SPIN THE WHEEL OF FANDOM
+    </button>
+  </div>
+
+  <script>
+    const teamsArray = [
+      {
+        name: "Atlanta Hawks",
+        logo: "./images/atlanta_hawks_logo.png"
+      }
+      {
+        name: "Boston Celtics",
+        logo: "./images/boston_celtics_logo.png"
+      },
+      {
+        name: "Brooklyn Nets",
+        logo: "./images/brooklyn_nets_logo.png"
+      },
+      {
+        name: "Charlotte Hornets",
+        logo: "./images/charlotte_hornets_logo.png"
+      },
+      {
+        name: "Chicago Bulls",
+        logo: "./images/chicago_bulls_logo.png"
+      },
+      {
+        name: "Cleveland Cavaliers",
+        logo: "./images/cleveland_cavaliers_logo.png"
+      },
+      {
+        name: "Dallas Mavericks",
+        logo: "./images/dallas_mavericks_logo.png"
+      },
+      {
+        name: "Denver Nuggets",
+        logo: "./images/denver_nuggets_logo.png"
+      },
+      {
+        name: "Detroit Pistons",
+        logo: "./images/detroit_pistons_logo.png"
+      },
+      {
+        name: "Golden State Warriors",
+        logo: "./images/golden_state_warriors_logo.png"
+      },
+      {
+        name: "Houston Rockets",
+        logo: "./images/houston_rockets_logo.png"
+      },
+      {
+        name: "Indiana Pacers",
+        logo: "./images/indiana_pacers_logo.png"
+      },
+      {
+        name: "Los Angeles Clippers",
+        logo: "./images/los_angeles_clippers_logo.png"
+      },
+      {
+        name: "Los Angeles Lakers",
+        logo: "./images/los_angeles_lakers_logo.png"
+      },
+      {
+        name: "Memphis Grizzlies",
+        logo: "./images/memphis_grizzlies_logo.png"
+      },
+      {
+        name: "Memphis Grizzlies",
+        logo: "./images/memphis_grizzlies_logo.png"
+      },
+      {
+        name: "Miami Heat",
+        logo: "./images/miami_heat_logo.png"
+      },
+      {
+        name: "Milwaukee Bucks",
+        logo: "./images/milwaukee_bucks_logo.png"
+      },
+      {
+        name: "Minnesota Timberwolves",
+        logo: "./images/minnesota_timberwolves_logo.png"
+      },
+      {
+        name: "New Orleans Pelicans",
+        logo: "./images/new_orleans_pelicans_logo.png"
+      },
+      {
+        name: "New York Knicks",
+        logo: "./images/new_york_knicks_logo.png"
+      },
+      {
+        name: "Oklahoma City Thunder",
+        logo: "./images/oklahoma_city_thunder_logo.png"
+      },
+      {
+        name: "Orlando Magic",
+        logo: "./images/orlando_magic_logo.png"
+      },
+      {
+        name: "Philadelphia 76ers",
+        logo: "./images/philadelphia_76ers_logo.png"
+      },
+      {
+        name: "Phoenix Suns",
+        logo: "./images/phoenix_suns_logo.png"
+      },
+      {
+        name: "Portland Trail Blazers",
+        logo: "./images/portland_trail_blazers_logo.png"
+      },
+      {
+        name: "Sacramento Kings",
+        logo: "./images/sacramento_kings_logo.png"
+      },
+      {
+        name: "San Antonio Spurs",
+        logo: "./images/san_antonio_spurs_logo.png"
+      },
+      {
+        name: "Toronto Raptors",
+        logo: "./images/toronto_raptors_logo.png"
+      },
+      {
+        name: "Utah Jazz",
+        logo: "./images/utah_jazz_logo.png"
+      },
+      {
+        name: "Washington Wizards",
+        logo: "./images/washington_wizards_logo.png"
+      },
+    ];
+
+    const nameMarkup = `<h2>${teamsArray[0].name}</h2>`;
+    const loadTeamData = () => {
+      document.querySelector("#team-name").innerHTML = nameMarkup;
+      document.querySelector("#team-logo").setAttribute("src", `${teamsArray[0].logo}`);
+    }
+    document.querySelector("#spin-it").addEventListener("click", loadTeamData);
+  </script>
+</body>
+</html>
