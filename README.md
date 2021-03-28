@@ -1,5 +1,7 @@
 # The NBA Liberated Fandom Slot Machine
 
+![Slot machine](https://i.pinimg.com/originals/0a/58/16/0a5816855be88ec8c02ce9ce659395ea.png)
+
 ## What is it?
 A slot machine to randomly choose NBA team(s) to follow in the pursuit of liberated fandom.
 
