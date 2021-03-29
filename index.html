@@ -24,7 +24,7 @@
       {
         name: "Atlanta Hawks",
         logo: "./images/atlanta_hawks_logo.png"
-      }
+      },
       {
         name: "Boston Celtics",
         logo: "./images/boston_celtics_logo.png"
@@ -76,10 +76,6 @@
       {
         name: "Los Angeles Lakers",
         logo: "./images/los_angeles_lakers_logo.png"
-      },
-      {
-        name: "Memphis Grizzlies",
-        logo: "./images/memphis_grizzlies_logo.png"
       },
       {
         name: "Memphis Grizzlies",
@@ -147,10 +143,21 @@
       },
     ];
 
-    const nameMarkup = `<h2>${teamsArray[0].name}</h2>`;
+    // const shuffle = (array) => {
+    //   i = Math.floor(Math.random() * array.length);
+    //   const nameMarkup = `<h2>${array[i].name}</h2>`;
+    //   document.querySelector("#team-name").innerHTML = nameMarkup;
+    //   document.querySelector("#team-logo").setAttribute("src", `${array[i].logo}`);
+    // };
+    
+    // document.querySelector("#spin-it").addEventListener("click", console.log("Here I am!"));
+
+    
     const loadTeamData = () => {
-      document.querySelector("#team-name").innerHTML = nameMarkup;
-      document.querySelector("#team-logo").setAttribute("src", `${teamsArray[0].logo}`);
+      let i = Math.floor(Math.random() * teamsArray.length);
+      document.querySelector("#team-name").innerHTML = `<h2>${teamsArray[i].name}</h2>`;
+      document.querySelector("#team-logo").setAttribute("src", `${teamsArray[i].logo}`);
+      console.log()
     }
     document.querySelector("#spin-it").addEventListener("click", loadTeamData);
   </script>

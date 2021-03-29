@@ -1,3 +1,13 @@
 body {
   background-color: palevioletred;
 };
+
+.container {
+  width: max;
+  margin: auto;
+}
+
+#team-logo {
+  width: 33%;
+  height: auto;
+}
